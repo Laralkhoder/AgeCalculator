@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title> Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="labels">
+          <label for="day">Day</label>
+          <label for="month">Month</label>
+          <label for="year">Year</label>
+        </div>
+        <div class="labels">
+          <input type="text" name="day" id="day" placeholder="DD" />
+          <input type="text" name="month" id="month" placeholder="MM" />
+          <input type="text" name="year" id="year" placeholder="YYYY" />
+        </div>
+        <div class="errors">
+          <small class="day-error">Must be a valid day</small>
+          <small class="month-error">Must be a valid month</small>
+          <small class="year-error">Must be a valid year</small>
+        </div>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </form>
+      <section>
+      <div>
+        <div>
+          <span id="sy">--</span>
+          <span> years</span>
+        </div>
+        <div>
+          <span id="sm">--</span>
+          <span>months</span>
+        </div>
+        <div>
+          <span id="sd">--</span>
+          <span>days</span>
+        </div>
+      </div>
+        <div class="zodiac">
+          your Zodiac sign :
+          <span >
+            <img id="zodImg" src="" alt="">
+            <span id="zod">--</span>
+            </span>
+        </div>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lara_Alkhoder</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
