@@ -65,7 +65,7 @@ if(dy<0){
   document.getElementById('year').style.borderColor='red'
 
 }
-   if(v1&&v2&&v3){
+if(v1&&v2&&v3){
  
 const days = [21, 20, 21, 21, 22, 22, 23, 24, 24, 24, 23, 22];
 const signs = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"];
