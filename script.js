@@ -46,10 +46,11 @@ v3=true
   document.getElementsByClassName('year-error')[0].style.visibility='hidden';
   document.getElementById('year').style.borderColor=' var(--Light-grey)'  
 }
-   if(v1&&v2&&v3){
- dd=day-d;
+
+dd=day-d;
  dm=month-m;
  dy=year-y;
+ 
    if(dd<0){
     dm--;
     dd+=30;
@@ -58,7 +59,14 @@ if(dm<0){
     dy--;
     dm+=12;
 }
+if(dy<0){
+  v3=false
+  document.getElementsByClassName('year-error')[0].style.visibility='visible'
+  document.getElementById('year').style.borderColor='red'
 
+}
+   if(v1&&v2&&v3){
+ 
 const days = [21, 20, 21, 21, 22, 22, 23, 24, 24, 24, 23, 22];
 const signs = ["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"];
 
